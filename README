@@ -1,0 +1,8 @@
+test_rational.c
+Viet Thanh Nguyen
+2/13/24
+This program reads rational numbers and operations from an input file. It supports addition, subtraction, multiplication, division, and comparison operators (==,!=, >, <, >=, <=) for rational numbers. The input file should include lines with rational numbers and operators separated by spaces or slashes, while the output file will contain the results of the operations.The program is divided into four functions: reading rational numbers, performing operations, simplifying rational numbers, and printing results. It represents rational numbers with a Rational struct and manipulates them using functions.The main function reads input from the command line, opens input and output files, processes each line in the input file, executes the specified operations, and writes the results to the output file. 
+To compile the program, run the command:
+gcc -g -Wall test_rational.o rational.o -lm -o rational_math 
+To run the program, run the command:
+./rational_math testStarter.txt Output.txt
